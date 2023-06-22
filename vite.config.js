@@ -218,7 +218,11 @@ export default defineConfig(({ command, mode }) => {
         */
         moment: path.resolve(
           __dirname,
-          "./node_modules/moment/min/moment-with-locales.js",
+          "./node_modules/.pnpm/node_modules/moment/min/moment-with-locales.js",
+        ),
+        "react-transition-group": path.resolve(
+          __dirname,
+          "./node_modules/.pnpm/node_modules/react-transition-group",
         ),
       },
     },

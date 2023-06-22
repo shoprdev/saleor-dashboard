@@ -7,7 +7,7 @@ const fs = require("fs");
 */
 
 const dep =
-  "node_modules/react-virtualized/dist/es/WindowScroller/utils/onScroll.js";
+  "node_modules/.pnpm/node_modules/react-virtualized/dist/es/WindowScroller/utils/onScroll.js";
 const code = fs
   .readFileSync(dep, "utf-8")
   .replace(
