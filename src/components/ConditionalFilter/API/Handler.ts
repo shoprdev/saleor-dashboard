@@ -32,7 +32,7 @@ export interface Handler {
   fetch: () => Promise<OptionDTO[]>;
 }
 
-const createOptionsFromAPI = (
+export const createOptionsFromAPI = (
   // TODO: try to use type from graphql
   data: Array<{ node: { name: string; id: string; slug: string } }>,
 ): OptionDTO[] =>
