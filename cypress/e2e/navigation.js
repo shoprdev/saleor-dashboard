@@ -39,7 +39,7 @@ describe("As a staff user I want to navigate through shop using different permis
     cy.clearSessionData();
   });
   it(
-    `should be able to navigate through shop as a staff member using DISCOUNTS permission. TC: SALEOR_3405a - sales list`,
+    `should be able to navigate through shop as a staff member using DISCOUNTS permission. TC: SALEOR_3418 - sales list`,
     { tags: ["@allEnv", "@navigation", "@stable", "@oldRelease", "@critical"] },
     () => {
       cy.visitHomePageLoggedViaApi(PERMISSIONS_OPTIONS.discount.user);
@@ -50,7 +50,7 @@ describe("As a staff user I want to navigate through shop using different permis
     },
   );
   it(
-    `should be able to navigate through shop as a staff member using DISCOUNTS permission. TC: SALEOR_3405b - voucher list`,
+    `should be able to navigate through shop as a staff member using DISCOUNTS permission. TC: SALEOR_3405 - voucher list`,
     { tags: ["@allEnv", "@navigation", "@stable", "@oldRelease", "@critical"] },
     () => {
       cy.addAliasToGraphRequest("VoucherList")
@@ -62,7 +62,7 @@ describe("As a staff user I want to navigate through shop using different permis
   );
 
   it(
-    `should be able to navigate through shop as a staff member using ORDER permission. TC: SALEOR_3407a - order list `,
+    `should be able to navigate through shop as a staff member using ORDER permission. TC: SALEOR_3407 - order list `,
     { tags: ["@allEnv", "@navigation", "@stable", "@oldRelease", "@critical"] },
     () => {
       cy.visitHomePageLoggedViaApi(PERMISSIONS_OPTIONS.order.user);
@@ -86,7 +86,7 @@ describe("As a staff user I want to navigate through shop using different permis
   );
 
   it(
-    `should be able to navigate through shop as a staff member using ORDER permission. TC: SALEOR_3407b - draft list`,
+    `should be able to navigate through shop as a staff member using ORDER permission. TC: SALEOR_3419 - draft list`,
     { tags: ["@allEnv", "@navigation", "@stable", "@oldRelease", "@critical"] },
     () => {
       cy.addAliasToGraphRequest("OrderDraftList")
@@ -140,7 +140,7 @@ describe("As a staff user I want to navigate through shop using different permis
   );
 
   it(
-    `should be able to navigate through shop as a staff member using CHANNEL permission. TC: SALEOR_3403b - webhooks and events `,
+    `should be able to navigate through shop as a staff member using CHANNEL permission. TC: SALEOR_3420 - webhooks and events `,
     { tags: ["@allEnv", "@navigation", "@stable", "@oldRelease", "@critical"] },
     () => {
       cy.addAliasToGraphRequest("AppsList")
@@ -213,7 +213,7 @@ describe("As a staff user I want to navigate through shop using different permis
   );
 
   it(
-    `should be able to navigate through shop as a staff member using PAGE - permission. TC: SALEOR_3408b - page types list `,
+    `should be able to navigate through shop as a staff member using PAGE - permission. TC: SALEOR_3421 - page types list `,
     { tags: ["@allEnv", "@navigation", "@stable", "@oldRelease", "@critical"] },
     () => {
       cy.addAliasToGraphRequest("PageTypeList")
@@ -365,7 +365,7 @@ describe("As a staff user I want to navigate through shop using different permis
   );
 
   it(
-    `should be able to navigate through shop as a staff member using STAFF permission. TC: SALEOR_3414b  - permission group `,
+    `should be able to navigate through shop as a staff member using STAFF permission. TC: SALEOR_3422  - permission group `,
     { tags: ["@allEnv", "@navigation", "@stable", "@oldRelease", "@critical"] },
     () => {
       cy.addAliasToGraphRequest("PermissionGroupList")
@@ -417,7 +417,7 @@ describe("As a staff user I want to navigate through shop using different permis
   );
 
   it(
-    `should be able to navigate through shop as a staff member using PRODUCT permission. TC: SALEOR_3410a - products list `,
+    `should be able to navigate through shop as a staff member using PRODUCT permission. TC: SALEOR_3410 - products list `,
     { tags: ["@allEnv", "@navigation", "@stable", "@oldRelease", "@critical"] },
     () => {
       cy.visitHomePageLoggedViaApi(PERMISSIONS_OPTIONS.product.user);
@@ -434,7 +434,7 @@ describe("As a staff user I want to navigate through shop using different permis
   );
 
   it(
-    `should be able to navigate through shop as a staff member using PRODUCT permission. TC: SALEOR_3410b - categories list `,
+    `should be able to navigate through shop as a staff member using PRODUCT permission. TC: SALEOR_3423 - categories list `,
     { tags: ["@allEnv", "@navigation", "@stable", "@oldRelease", "@critical"] },
     () => {
       cy.addAliasToGraphRequest("RootCategories")
@@ -447,7 +447,7 @@ describe("As a staff user I want to navigate through shop using different permis
   );
 
   it(
-    `should be able to navigate through shop as a staff member using PRODUCT permission. TC: SALEOR_3410c - collections list `,
+    `should be able to navigate through shop as a staff member using PRODUCT permission. TC: SALEOR_3424 - collections list `,
     { tags: ["@allEnv", "@navigation", "@stable", "@oldRelease", "@critical"] },
     () => {
       cy.addAliasToGraphRequest("CollectionList")
